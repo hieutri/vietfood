@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="/project/css/general.css">
-    <link rel="stylesheet" href="/project/css/login-register.css">
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/login-register.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../fonts/fontawesome-free-6.1.1-web/css/all.min.css">
@@ -13,42 +13,37 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="nav-container">
-        <h1 class="nav__logo">Vietfood</h1>
-        <div class="nav__right-container">
-            <div class="nav__right__item-container">
-                <div class="nav__account">Login/Sign Up</div>
-            </div>
-        </div>
-    </div>
-
-    <form class="form" id="login-form">
-        <div class="form-container">
-
+    <div class="gradient-background">
+        <form class="form-container" id="login-form">
             <h1 class="form-heading">Register</h1>
-
+    
             <div class="form__input-container">
-                <h3>Name:</h3>
-                <input type="text">
+                <p>Name:</p>
+                <input type="text" name="name">
             </div>
-
+    
             <div class="form__input-container">
-                <h3>Email:</h3>
-                <input type="email">
+                <p>Email:</p>
+                <input type="email" name="email">
             </div>
             
             <div class="form__input-container">
-                <h3>Password:</h3>
-                <input type="text">
+                <p>Password:</p>
+                <input type="password" name="password">
             </div>
-
-            <div class="form-action">
-                <button type="sumbot">Register</button>
-                <span id="redirect-to-register">Already have an account? <a href="#">Login now</a></span>
+    
+            <div class="form__input-container">
+                <p>Confirm Password:</p>
+                <input type="password" name="confirmPassword">
             </div>
+    
+            <div class="form__action">
+                <button type="sumbit">Register</button>
+                <span id="redirect-to-register">Already have an account? <a href="/html/login.html">Login now</a></span>
+            </div>
+        </form>
+    </div>
 
-        </div>
-    </form>
 
 
 </body>

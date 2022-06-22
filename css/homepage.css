@@ -1,0 +1,139 @@
+.header-container{
+    height: 80vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.25);
+}
+.header-nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.header-nav-heading{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header-nav-icon-container{
+    display: flex;
+}
+.header-nav-icon-container div{
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.header-nav-icon-container div:nth-child(1){
+    width: 40px;
+    font-size: 18px;
+}
+.header-nav-icon-container div:nth-child(2){
+    width: 150px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.header-nav-icon-container div:nth-child(2) a{
+    color: #000;
+}
+
+.header-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-search-container{
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 400px;
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 80px;
+}
+.header-search-greeting{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.header-search-heading{
+    width: 300px;
+}
+.header-search-input{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    margin: 15px 0px;
+}
+.header-search-input:focus{
+    border: 1px solid #1ebd60;
+}
+.header-search-input:hover{
+    border: 1px solid #1ebd60;
+    transition: .4s ease-in-out;
+}
+.header-search-button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background: #1ebd60;
+    cursor: pointer;
+}
+
+/*suggestion*/
+
+.suggestion-container .item-wrapper{
+    width: 1500px;
+}
+
+.suggestion-heading{
+    font-size: 3rem;
+    margin: 40px 0;
+    text-align: center;
+}
+.suggestion-heading p{
+    display: inline-block;
+    color: #1ebd60;
+}
+
+.food-introduction{
+    display: flex;
+    margin: 40px 0px;
+}
+
+.food-introduction-left{
+    padding: 2rem;
+}
+.food-introduction-heading{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.food-introduction-content{
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.food-introduction-img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.food-introduction-reverse{
+    flex-direction: row-reverse;
+}
+.food-introduction-reverse .food-introduction-heading, .food-introduction-reverse .food-introduction-content{
+    text-align: end;
+}
