@@ -1,3 +1,14 @@
+window.addEventListener('scroll', () =>{
+    const headerStickyNav = document.getElementById("header-nav")
+    if(window.scrollY == 0){
+        headerStickyNav.classList.remove("nav-sticky")
+    }
+    else{
+        headerStickyNav.classList.add("nav-sticky")
+    }
+})
+
+
 const today = new Date()
 let todayHour = today.getHours()
 const headerGreeting = document.getElementById("header-search-greeting");

@@ -14,25 +14,26 @@
     <title>Document</title>
 </head>
 <body>
-
     
-    <div class="header-container">
-        <img class="header-img" src="/imgs/homepage/header2.jpg" alt="">
+    <img class="header-img" src="/imgs/homepage/header2.jpg" alt="">
+    <div id="header-nav" class="header-nav-container">
         <div class="item-wrapper">
-            <div class="header-nav-container">
-                    <h1 class="header-nav-heading">Vietfood</h1>
-                    <div class="header-nav-icon-container">
-                        <div><i class="fa-solid fa-bag-shopping"></i></div>
-                        <div><a href="/html/register.html">Login/Register</a></div>
-                </div>
-            </div>
-            <div class="header-search-container">
-                    <div id="header-search-greeting" class="header-search-greeting"></div>
-                    <h1 class="header-search-heading">Hungry? Let's find good Vietnamese food for you.</h1>
-                    <input class="header-search-input" type="text" name="headerSearchBar" placeholder="Search for food">
-                    <button class="header-search-button" type="submit">Search</button>
+            <h1 id="redirect-to-homepage" class="header-nav-heading">Vietfood</h1>
+            <div class="header-nav-icon-container">
+                <div id="shopping-cart"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div><a href="/html/register.html">Login/Register</a></div>
             </div>
         </div>
+    </div>
+    <div class="header-container">
+            <div class="item-wrapper">
+                <div class="header-search-container">
+                        <div id="header-search-greeting" class="header-search-greeting"></div>
+                        <h1 class="header-search-heading">Hungry? Let's find good Vietnamese food for you.</h1>
+                        <input class="header-search-input" type="text" name="headerSearchBar" placeholder="Search for food">
+                        <button class="header-search-button" type="submit">Search</button>
+                </div>
+            </div>
     </div>
 
     <div class="suggestion-container">
@@ -108,5 +109,6 @@
 
 
     <script src="/js/homepage.js"></script>
+    <script src="/js/general.js"></script>
 </body>
 </html>
