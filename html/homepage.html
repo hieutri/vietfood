@@ -14,13 +14,24 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="shopping-cart-container" class="shopping-cart-container">
+        <div onclick="turnOffCart()" class="background-transparent"></div>
+        <div class="shopping-cart">
+            <div class="x-mark" onclick="turnOffCart()"><i class="fa-solid fa-xmark"></i></div>
+            <div class="shopping-cart-info">
+                <h3>Your cart is empty!</h3>
+                <p>Add items to your cart and place order here.</p>
+            </div>
+        </div>
+    </div>
     
     <img class="header-img" src="/imgs/homepage/header2.jpg" alt="">
     <div id="header-nav" class="header-nav-container">
         <div class="item-wrapper">
             <h1 id="redirect-to-homepage" class="header-nav-heading">Vietfood</h1>
             <div class="header-nav-icon-container">
-                <div id="shopping-cart"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div id="shopping-cart-icon"><i class="fa-solid fa-bag-shopping"></i></div>
                 <div><a href="/html/register.html">Login/Register</a></div>
             </div>
         </div>

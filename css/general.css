@@ -10,3 +10,43 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+.shopping-cart-container{
+    visibility: hidden;
+    position: fixed;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.2s;
+}
+.background-transparent{
+    position: fixed;
+    transition: 0.3s;
+    opacity: 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+.shopping-cart{
+    transform: translateX(420px);
+    transition: 0.3s;
+    background: #fff;
+    width: 420px;
+    height: 100%;
+    padding: 30px;
+}
+.x-mark{
+    font-size: 25px;
+    cursor: pointer;
+}
+.shopping-cart-visible{
+    visibility: visible;
+}
+.shopping-cart-visible .shopping-cart{
+    transform: translateX(0);
+}
+.shopping-cart-visible .background-transparent{
+    opacity: 1;
+}
